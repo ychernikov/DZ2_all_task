@@ -112,7 +112,7 @@ public class DZ2 {
           return 0;
         }
 
-    result=Func(n/2)*/
+    result=Func(n/2)}*/
 
 
 
