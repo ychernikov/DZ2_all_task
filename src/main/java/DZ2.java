@@ -3,7 +3,12 @@ import java.util.Scanner;
 /**
  * Created by admin on 2/8/2018.
  */
+
 public class DZ2 {
+    /**
+    Тоже самое по поводу printf, не нужно использовать конкатенацию
+    посмотри урок и почитай доку
+    **/
     public static void main(String[] args) {
         System.out.printf("Vvedite индекс числа фибоначчи: %n");
         Scanner console = new Scanner(System.in);
