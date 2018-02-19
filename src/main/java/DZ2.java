@@ -16,6 +16,10 @@ public class DZ2 {
         System.out.printf("Числo фибоначчи c индексom " + p + " = " + fibon(p));
     }
 
+    /**
+    Много повторяемого кода 
+    Нужно декомпозировать задачу и винести повторяющийся код в статические методы
+    **/
     public static void task1() {
         int max_str;
         System.out.printf("Vvedite Im9 %n");
@@ -77,6 +81,9 @@ public class DZ2 {
         long max = 0;
         long min = 9;
         while (chislo > 0) {
+            //не нужно 4 раза считать остаток от числа
+            //посчитай его раз и присвой значение переменной
+            //потом ее уже проверяй!!
             if (chislo % 10 > max) {
                 max = chislo % 10;
             }
