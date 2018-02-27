@@ -13,7 +13,7 @@ public class DZ2 {
         System.out.printf("Vvedite индекс числа фибоначчи: %n");
         Scanner console = new Scanner(System.in);
         int p = console.nextInt();
-        System.out.printf("Числo фибоначчи c индексom " + p + " = " + fibon(p));
+        System.out.printf("Числo фибоначчи c индексom %d = %s", p, fibon(p));
     }
 
     /**
@@ -22,7 +22,7 @@ public class DZ2 {
     **/
     public static void task1() {
         int max_str;
-        System.out.printf("Vvedite Im9 %n");
+        System.out.println("Vvedite Im9 %n");
         Scanner console = new Scanner(System.in);
         String im9 = console.nextLine();
         System.out.printf("%nVvedite Familiu %n");
@@ -48,7 +48,7 @@ public class DZ2 {
                 System.out.printf(" ");
             }
             System.out.printf(" *");
-            System.out.printf("%n* " + im9 + " " + fam + " " + otch + " *%n");
+            System.out.printf("%n* %s %s %s *%n", im9, fam, otch);
             for (int i = 0; i < max_str + 2; i++) {
                 System.out.printf("*");
             }
@@ -59,7 +59,7 @@ public class DZ2 {
             }
             System.out.printf("%n* Курс: Java core *%n");
             System.out.printf("* Студент         *");
-            System.out.printf("%n* " + im9 + " " + fam + " " + otch);
+            System.out.printf("%n* %s %s %s", im9, fam, otch);
             int str3 = 15 - dlina_FIO - 2;
             for (int i = 0; str3 > i; i++) {
                 System.out.printf(" ");
@@ -69,7 +69,6 @@ public class DZ2 {
                 System.out.printf("*");
             }
         }
-
     }
 
     public static void task2() {
@@ -77,7 +76,6 @@ public class DZ2 {
         Scanner console = new Scanner(System.in);
         long chislo = console.nextLong();
         long c = chislo;
-
         long max = 0;
         long min = 9;
         while (chislo > 0) {
@@ -92,9 +90,7 @@ public class DZ2 {
             }
             chislo /= 10;
         }
-
-        System.out.printf("%nУ числа " + c + ":%n" + "   Наименьшее число: " + min + "%n   Наибольшее число: " + max);
-
+        System.out.printf("%nУ числа %d :%nНаименьшее число: %d%nНаибольшее число: %d", c, min, max);
     }
 
     static int fibon(int n) {
@@ -112,20 +108,4 @@ public class DZ2 {
         return result;
 
     }
-
-    /*static int Func(int n) {
-        int result;
-        if (n == 1)
-        {
-            return 1;
-        }
-        if(n==0)
-        {
-          return 0;
-        }
-
-    result=Func(n/2)}*/
-
-
-
 }
