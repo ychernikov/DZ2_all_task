@@ -78,15 +78,17 @@ public class DZ2 {
         long c = chislo;
         long max = 0;
         long min = 9;
+        long ost=chislo % 10;
         while (chislo > 0) {
             //не нужно 4 раза считать остаток от числа
             //посчитай его раз и присвой значение переменной
             //потом ее уже проверяй!!
-            if (chislo % 10 > max) {
-                max = chislo % 10;
+
+            if (ost % 10 > max) {
+                max = ost;
             }
-            if (chislo % 10 < min) {
-                min = chislo % 10;
+            if (ost % 10 < min) {
+                min = ost;
             }
             chislo /= 10;
         }
